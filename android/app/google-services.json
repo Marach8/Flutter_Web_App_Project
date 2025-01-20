@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "173760311905",
+    "project_id": "marach-e-commerce-app",
+    "storage_bucket": "marach-e-commerce-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173760311905:android:55fda7cfcee95771ff3020",
+        "android_client_info": {
+          "package_name": "com.example.flutter_web_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173760311905-45u23dcbbknr9rhaoseca358ba92e8gt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvb05ZbWq_NkLlSggr9luIfPymdOgPecQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173760311905-45u23dcbbknr9rhaoseca358ba92e8gt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "173760311905-4bebp6nq4no306iaftrt6t7lbb7plhfo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shopAll"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173760311905:android:ceaf5a3b157d3da2ff3020",
+        "android_client_info": {
+          "package_name": "com.example.shop_all"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173760311905-lcm4urtlrm0jo96tvtbvnnp20ipnpsqf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shop_all",
+            "certificate_hash": "2e317a6a6aa3bced0189b291138a0ec210e98fc2"
+          }
+        },
+        {
+          "client_id": "173760311905-45u23dcbbknr9rhaoseca358ba92e8gt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvb05ZbWq_NkLlSggr9luIfPymdOgPecQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173760311905-45u23dcbbknr9rhaoseca358ba92e8gt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "173760311905-4bebp6nq4no306iaftrt6t7lbb7plhfo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shopAll"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
