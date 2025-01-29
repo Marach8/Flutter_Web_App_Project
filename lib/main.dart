@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_web_app/firebase_options.dart';
 import 'package:get/get.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main()async{
   WidgetsFlutterBinding.ensureInitialized();
+  setPathUrlStrategy();
+  
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
   .then(
     (_){}
@@ -21,10 +24,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      // routes: {
-      //   '/': (_) => const Screen1(),
-      //   '/screen34': (_) => const Screen34()
-      // },
+      routes: {
+        '/': (_) => const Screen1(),
+        '/screen34': (_) => const Screen34()
+      },
       getPages: [
         GetPage(name: '/', page: () => const Screen1()),
         GetPage(name: '/screen34', page: () => const Screen34())
@@ -109,9 +112,7 @@ class Screen1 extends StatelessWidget {
             const SizedBox(height: 10),
 
             ElevatedButton(
-              onPressed: (){
-                Get.toNamed('/screen34');
-              },
+              onPressed: () => Get.toNamed('/screen34'),
               child: const Text('pass data in url with arguments'),
             )
           ],
@@ -140,6 +141,14 @@ class Screen34 extends StatelessWidget {
             ),
             Text(
               Get.parameters['surname'] ?? ''
+            ),
+            Text(
+              'Emmanuel was a brilliant student before',
+              style: Theme.of(context).textTheme.headlineMedium
+            ),
+            Text(
+              'Emmanuel is no longer a brilliant student',
+              style: Theme.of(context).textTheme.bodySmall
             )
           ],
         ),
